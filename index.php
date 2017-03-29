@@ -450,6 +450,8 @@
         { 
             $rtnString .= "<pre>$key=$value</pre>";
         }
+
+        $rtnString .= " " . $result;
  
         return $rtnString;
     }
