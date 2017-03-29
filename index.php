@@ -15,6 +15,7 @@
         public $refreshToken;       // Refresh token
         public $instanceURL;        // Salesforce Instance URL
         public $userId;             // Current User Id
+        public $redirect_uri;             // Current User Id
          
         public $codeVerifier;       // 128 bytes of random data used to secure the request
  
@@ -36,6 +37,7 @@
             $this->refreshToken = "";
             $this->instanceURL = "";
             $this->userId = "";
+            $this->redirect_uri = getCallBackURL();
              
             $this->error = "";
             $this->errorDescription = "";
@@ -145,6 +147,7 @@
             echo "<pre>token = $this->token</pre>";
             echo "<pre>refreshToken = $this->refreshToken</pre>";
             echo "<pre>instanceURL = $this->instanceURL</pre>";
+            echo "<pre>redirectURI = $this->redirect_uri</pre>";
             echo "<pre>userId = $this->userId</pre>";
             echo "<pre>error = $this->error</pre>";
             echo "<pre>errorDescription = $this->errorDescription</pre>";
