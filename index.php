@@ -331,8 +331,9 @@
         $state = $_SESSION['state'];
  
         // Set the POST url to call
-        $postURL = 'https://login.salesforce.com/services/oauth2/token';
- 
+        // Probando para comunidades:
+        //$postURL = 'https://login.salesforce.com/services/oauth2/token';
+        $postURL = 'https://sdodemo-main-15b0fc33c9c.force.com/Carrefour/services/oauth2/token';
         // Header options
         $headerOpts = array('Content-type: application/x-www-form-urlencoded');
  
