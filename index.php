@@ -457,7 +457,7 @@
      */
     function getClientId()
     {
-        return "xxxxxxxxxxxxxxxxxxxxxxxxxxyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyzzzzzzzzzzzzzzzzzzzzzzzzzz";
+        return "3MVG9i1HRpGLXp.rWT8Mzhvq8DPPrrDVfbDfNeOfylYhSkSl7BnWGhIYjxcJ40XOK4ZB56K5KRsiLq.BgEA2o";
     }
  
     /**
@@ -465,7 +465,7 @@
      */
     function getClientSecret()
     {
-        return "1234567890123456789";
+        return "6953965681299147457";
     }
  
     /**
