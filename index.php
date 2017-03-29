@@ -420,7 +420,7 @@
         $state = $_SESSION['state'];
  
         // Set our GET request URL
-        $getURL = $state->instanceURL . '/services/data/v20.0/sobjects/User/' . $state->userId . '?fields=Name';
+        $getURL = $state->instanceURL . '/services/data/v20.0/sobjects/User/' . $state->userId . '?fields=Name,Email,ContactId';
  
         // Header options
         $headerOpts = array('Authorization: Bearer ' . $state->token);
