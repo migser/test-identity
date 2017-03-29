@@ -477,7 +477,7 @@
     function getCallBackURL()
     {
         $callbackURL = ($_SERVER['HTTPS'] == NULL || $_SERVER['HTTPS'] == false ? "http://" : "https://") .
-            $_SERVER['SERVER_NAME'] . "/" . $_SERVER['PHP_SELF'];
+            $_SERVER['SERVER_NAME']  . $_SERVER['PHP_SELF'];
  
         return $callbackURL;
     }
