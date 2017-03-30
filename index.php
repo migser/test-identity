@@ -267,7 +267,7 @@
                 "&code_challenge=" . $state->generateCodeChallenge() .
                 "&state=" . $state->serializeStateString();
         */
-        $href = "https://sdodemo-main-15b0fc33c9c.force.com/Carrefour/services/oauth2/authorize?response_type=code" . 
+        $href = "https://sdodemo-main-15b0fc33c9c.force.com/Carrefour/services/oauth2/authorize?response_type=token" . 
                 "&client_id=" . getClientId() . 
                 "&redirect_uri=" . getCallBackURL() . 
                 "&scope=api refresh_token" . 
