@@ -279,7 +279,7 @@
                 "&client_id=" . getClientId() . 
                 "&client_secret=" . getClientSecret() .
                 "&username="."juanperez.salesforce2@gmail.com" .
-                "&password="."sfdc1234"
+                "&password="."sfdc1234";
         // Wipe out arbitary state values to demonstrate passing additional state to salesforce and back
         $state->passthroughState1 = NULL;
         $state->passthroughState2 = NULL;
