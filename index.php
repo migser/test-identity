@@ -267,13 +267,19 @@
                 "&code_challenge=" . $state->generateCodeChallenge() .
                 "&state=" . $state->serializeStateString();
         */
-        $href = "https://sdodemo-main-15b0fc33c9c.force.com/Carrefour/services/oauth2/authorize?response_type=token" . 
+       /* $href = "https://sdodemo-main-15b0fc33c9c.force.com/Carrefour/services/oauth2/authorize?response_type=code" . 
                 "&client_id=" . getClientId() . 
                 "&redirect_uri=" . getCallBackURL() . 
                 "&scope=api refresh_token" . 
                 "&prompt=consent" . 
                 "&code_challenge=" . $state->generateCodeChallenge() .
                 "&state=" . $state->serializeStateString();
+        */
+       $href = "https://sdodemo-main-15b0fc33c9c.force.com/Carrefour/services/oauth2/authorize?response_type=password" . 
+                "&client_id=" . getClientId() . 
+                "&client_secret=" . getClientSecret() .
+                "&username="."juanperez.salesforce2@gmail.com" .
+                "&password="."sfdc1234"
         // Wipe out arbitary state values to demonstrate passing additional state to salesforce and back
         $state->passthroughState1 = NULL;
         $state->passthroughState2 = NULL;
