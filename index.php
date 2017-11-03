@@ -268,8 +268,8 @@
                 "&state=" . $state->serializeStateString();
         */
       
-      $href = "https://sdodemo-main-15b0fc33c9c.force.com/Carrefour/services/oauth2/authorize?response_type=code" . 
-      //  $href = "https://login.salesforce.com/services/oauth2/authorize?response_type=code" . 
+    //  $href = "https://sdodemo-main-15b0fc33c9c.force.com/Carrefour/services/oauth2/authorize?response_type=code" . 
+      $href = "https://login.salesforce.com/services/oauth2/authorize?response_type=code" . 
                 "&client_id=" . getClientId() . 
                 "&redirect_uri=" . getCallBackURL() . 
                 "&scope=api refresh_token" . 
@@ -341,8 +341,8 @@
  
         // Set the POST url to call
         // Probando para comunidades:
-        //$postURL = 'https://login.salesforce.com/services/oauth2/token';
-        $postURL = 'https://sdodemo-main-15b0fc33c9c.force.com/Carrefour/services/oauth2/token';
+        $postURL = 'https://login.salesforce.com/services/oauth2/token';
+        //$postURL = 'https://sdodemo-main-15b0fc33c9c.force.com/Carrefour/services/oauth2/token';
         // Header options
         $headerOpts = array('Content-type: application/x-www-form-urlencoded');
  
@@ -480,7 +480,7 @@
      */
     function getClientId()
     {
-        return "3MVG9i1HRpGLXp.rWT8Mzhvq8DPPrrDVfbDfNeOfylYhSkSl7BnWGhIYjxcJ40XOK4ZB56K5KRsiLq.BgEA2o";
+        return "3MVG9i1HRpGLXp.rWT8Mzhvq8DKWj_lRxkZaT.hrWT9pGOS8GTRO1E_sY99UdhUQA5bGVEZnv95MvDLiSB2A7";
     }
  
     /**
@@ -488,7 +488,7 @@
      */
     function getClientSecret()
     {
-        return "6953965681299147457";
+        return "8356753996887886355";
     }
  
     /**
