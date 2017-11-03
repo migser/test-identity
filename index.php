@@ -496,9 +496,9 @@
      */
     function getCallBackURL()
     {
-        $callbackURL = ($_SERVER['HTTPS'] == NULL || $_SERVER['HTTPS'] == false ? "http://" : "https://") .
-            $_SERVER['SERVER_NAME']  . $_SERVER['PHP_SELF'];
- 
+       // $callbackURL = ($_SERVER['HTTPS'] == NULL || $_SERVER['HTTPS'] == false ? "http://" : "https://") .
+       //     $_SERVER['SERVER_NAME']  . $_SERVER['PHP_SELF'];
+            $callbackURL = "https://carrefour-identity.lightning.force.com";
         return $callbackURL;
     }
 ?>
